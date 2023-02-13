@@ -8,4 +8,4 @@ services:
     ports:
       - 80:80
     volumes:
-      - ./go:/usr/src/app
+      - ./go:/go/src
