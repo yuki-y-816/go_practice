@@ -44,5 +44,19 @@ func main () {
         複数行に渡る
         文字列\n
     `
-    fmt.Printf("%v", raw)
+    fmt.Printf("%v\n", raw)
+
+    a := [5]int{0,1,2,3,4}
+    fmt.Printf("%v\n", a)
+    fmt.Printf("a[1] = %v\n", a[1])
+
+    a1 := [...]string{"a", "b", "c"}
+    fmt.Printf("%v\n", a1)
+    a2 := [3]string{"d", "e", "f"}
+    a1 = a2
+    fmt.Printf("%v\n", a1)
+    a1[0] = "A"
+    a1[2] = "C"
+    fmt.Printf("a1 = %v\n", a1)
+    fmt.Printf("a2 = %v\n", a2)
 }
