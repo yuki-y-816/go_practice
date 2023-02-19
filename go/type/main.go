@@ -59,4 +59,13 @@ func main () {
     a1[2] = "C"
     fmt.Printf("a1 = %v\n", a1)
     fmt.Printf("a2 = %v\n", a2)
+
+    var x interface{}
+    fmt.Printf("interface{} is %v\n", x)
+    x = 1
+    fmt.Printf("interface{} = 1 is %v\n", x)
+    x = "text"
+    fmt.Printf("interface{} = 'text' is %v\n", x)
+    x = [...]uint64{2, 100, 777}
+    fmt.Printf("interface{} = [] is %v\n", x)
 }
