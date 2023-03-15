@@ -82,4 +82,21 @@ func main() {
 		fmt.Println("--- strings.SplitAfterN() ---")
 		fmt.Println(strings.SplitAfterN(str, ",", 3))
 	}
+	{
+		fmt.Println("--- strings.ToLower() ---")
+		fmt.Println(strings.ToLower("Hello, World!"))
+		fmt.Println("--- strings.ToUpper() ---")
+		fmt.Println(strings.ToUpper("Hello, World!"))
+	}
+	{
+		fmt.Println("--- strings.TrimSpace() ---")
+		fmt.Println(strings.TrimSpace(" - hello, world - "))
+		fmt.Println(strings.TrimSpace("\t- hello, world -\r\n"))
+		fmt.Println(strings.TrimSpace("　-日本語の全角-　"))
+
+		fmt.Println("--- strings.Fields() ---")
+		fmt.Println(strings.Fields("a b  c"))
+		fmt.Println(strings.Fields(" A\t B\tC \nD\rE"))
+		fmt.Println(strings.Fields("い　　ろ　は　　にほ　へ　　　　　と"))
+	}
 }
